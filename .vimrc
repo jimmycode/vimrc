@@ -4,10 +4,10 @@ set autoread "autoread when a file is changed from outside
 
 " configuring tab key
 set expandtab
-set shiftwidth=2
-" set shiftwidth=4
-set softtabstop=2
-" set softtabstop=4
+" set shiftwidth=2
+set shiftwidth=4
+" set softtabstop=2
+set softtabstop=4
 
 " indent
 "set autoindent
@@ -19,6 +19,9 @@ set hlsearch "highlight search keyword
 " syntax highlight
 syntax enable
 
+" color scheme
+" color desert
+
 " customized commands
 let mapleader=";"
 nmap <leader> :
@@ -28,12 +31,14 @@ nmap <Enter> kkkkk
 imap jj <esc>
 nmap s i<Space><esc>
 nmap 4 $
+nmap 3 ^
+nmap 9 %
 " nmap <tab> i<tab><esc>
 nmap K i<Enter><esc>
 nmap we <C-w>
 " highlight color
 hi Search cterm=NONE ctermfg=grey ctermbg=blue
-nmap \ *N
+nmap ` *N
 " resizing
 map + <c-w>+
 map - <c-w>-
@@ -93,7 +98,7 @@ let g:autoformat_verbosemode = 1
 " Python folding
 " mkdir -p ~/.vim/ftplugin
 " wget -O ~/.vim/ftplugin/python_editing.vim http://www.vim.org/scripts/download_script.php?src_id=5492
-" set nofoldenable
+set nofoldenable
 
 " Vim-commentary
 autocmd FileType python setlocal commentstring=#\ %s
