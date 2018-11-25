@@ -62,8 +62,8 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-commentary'
 Plugin 'tmhedberg/SimpylFold'
-"Plugin 'Chiel92/vim-autoformat'
-Plugin 'google/yapf', { 'rtp': 'plugins/vim' }
+Plugin 'Chiel92/vim-autoformat'
+" Plugin 'google/yapf', { 'rtp': 'plugins/vim' }
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -80,14 +80,19 @@ filetype plugin on
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-noremap <F5> :YAPF<CR>
+" [google/yapf]
+" noremap <F5> :YAPF<CR>
 " map <C-Y> :call yapf#YAPF()<cr>
 " imap <C-Y> <c-o>:call yapf#YAPF()<cr>
 
-" SimpylFold
+" [Chiel92/vim-autoformat]
+noremap <C-f> :Autoformat<CR>
+au BufWrite * :Autoformat " Auto-format when saving a file
+
+" [SimpylFold]
 nmap f za
 noremap <C-U> zr
-noremap <C-F> zm
+" noremap <C-F> zm
 
-" Vim-commentary
+" [Vim-commentary]
 autocmd FileType python setlocal commentstring=#\ %s
