@@ -1,6 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/home/data/ywubw/workspace/py-faster-rcnn/tools'
-let g:netrw_dirhist_2='/home/data/ywubw/workspace/py-faster-rcnn/data/scripts'
-let g:netrw_dirhist_3='/home/data/ywubw/workspace/ilsvrc2015/ilsvrc2015/datasets'
-let g:netrw_dirhist_4='/home/data/ywubw/workspace/ilsvrc2015/ilsvrc2015'
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/Users/yuxiangwu/workspace/neural-ir/embedders'
+let g:netrw_dirhist_2='/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/config'
+let g:netrw_dirhist_3='/Users/yuxiangwu/workspace/Odyssey/.git'
