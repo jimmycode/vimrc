@@ -96,13 +96,14 @@ filetype plugin on
 " imap <C-Y> <c-o>:call yapf#YAPF()<cr>
 
 " [Chiel92/vim-autoformat]
-noremap <C-f> :Autoformat<CR>
-au BufWrite * :Autoformat " Auto-format when saving a file
+au BufWrite *.py :Autoformat " Auto-format when saving a file
+noremap <C-k> :Autoformat<CR>
+let g:autoformat_verbosemode=1
 
 " [SimpylFold]
 nmap f za
 noremap <C-U> zr
-" noremap <C-F> zm
+noremap <C-F> zm
 
 " [Vim-commentary]
 autocmd FileType python setlocal commentstring=#\ %s
@@ -115,5 +116,6 @@ let g:jedi#goto_assignments_command = "ga"
 let g:jedi#rename_command = "gr"
 
 " [w0rp/ale]
-let g:ale_python_flake8_options = '--ignore=E501' " Ignore line too long error
+let g:ale_python_flake8_options = '--ignore=E501,W291' " Ignore line too long error
+" let g:ale_python_flake8_options = '--ignore=W291' " Ignore line too long error
 " ===================== End of Vundle config =======================

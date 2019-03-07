@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_cnt =4
 let g:netrw_dirhist_1='/Users/yuxiangwu/workspace/neural-ir/embedders'
 let g:netrw_dirhist_2='/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/config'
 let g:netrw_dirhist_3='/Users/yuxiangwu/workspace/Odyssey/.git'
+let g:netrw_dirhist_4='/Users/yuxiangwu/miniconda3/envs/nir/share/jupyter/kernels/python3'
